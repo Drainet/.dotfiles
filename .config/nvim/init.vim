@@ -18,6 +18,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 Plug 'udalov/kotlin-vim'
 Plug 'vim-airline/vim-airline'
+Plug 'numToStr/Comment.nvim'
 call plug#end()
 
 colorscheme gruvbox
