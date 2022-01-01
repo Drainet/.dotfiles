@@ -34,6 +34,11 @@ map <leader>sd <Action>(QuickJavaDoc)
 map <leader>sl <Action>(ActivateVersionControlToolWindow)
 map <leader>sb <Action>(ViewStatusBar)
 
+"" extract:
+map <leader>ev <Action>(IntroduceVariable)
+map <leader>ef <Action>(ExtractFunction)
+map <leader>ea <Action>(IntroduceParameter)
+map <leader>ep <Action>(IntroduceProperty)
 
 map <leader>d <Action>(Debug)
 map <leader>b <Action>(ToggleLineBreakpoint)
