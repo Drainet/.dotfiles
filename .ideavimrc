@@ -6,12 +6,21 @@ set ideastatusicon=gray
 set surround
 set easymotion
 set NERDTree
+set commentary
+
+map ∆ <Action>(EditorCloneCaretBelow)
+map ˚ <Action>(EditorCloneCaretAbove)
 
 map U <C-R>
 
 "" Re:
 map <leader>rf <Action>(ReformatCode)
 map <leader>rn <Action>(RenameElement)
+
+"" Go:
+map gu <Action>(GotoSuperMethod)
+map gi <Action>(GotoImplementation)
+map gw <Action>(GotoNextError)
 
 "" find
 map <leader>fc <Action>(GotoClass)
@@ -29,12 +38,14 @@ map <leader>su <Action>(ShowUsages)
 map <leader>sf <Action>(SelectInProjectView)
 map <leader>sn <Action>(ViewNavigationBar)
 map <leader>se <Action>(RecentFiles)
-map <leader>sg <Action>(ActivateCommitToolWindow)
+map <leader>sgs <Action>(ActivateCommitToolWindow)
 map <leader>sd <Action>(QuickJavaDoc)
 map <leader>sl <Action>(ActivateVersionControlToolWindow)
 map <leader>ss <Action>(ViewStatusBar)
 map <leader>sb <Action>(ActivateBuildToolWindow)
 map <leader>sgd <Action>(ActivateGradleToolWindow)
+map <leader>st <Action>(ActivateTerminalToolWindow)
+map <leader>sm <Action>(FileStructurePopup)
 
 "" extract:
 map <leader>ev <Action>(IntroduceVariable)
@@ -42,10 +53,15 @@ map <leader>ef <Action>(ExtractFunction)
 map <leader>ea <Action>(IntroduceParameter)
 map <leader>ep <Action>(IntroduceProperty)
 
+"" move:
+map mk @=<Action>(MoveStatementUp)<CR>
+map mj @=<Action>(MoveStatementDown)<CR>
+
 map <leader>rd <Action>(Debug)
 map <leader>b <Action>(ToggleLineBreakpoint)
 map <leader>rr <Action>(Run)
 map <leader>rc <Action>(Stop)
+map <leader>rga <Action>(ExternalSystem.RefreshProject)
 
 map <leader>ca <Action>(ShowIntentionActions)
 
@@ -53,3 +69,5 @@ map <leader>ca <Action>(ShowIntentionActions)
 "" history
 map <C-o> <Action>(Back)
 map <C-i> <Action>(Forward)
+
+nnoremap <CR> :noh<CR><CR>
