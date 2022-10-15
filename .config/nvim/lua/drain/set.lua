@@ -1,0 +1,16 @@
+vim.opt.nu = true
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.relativenumber = true
+vim.opt.ai = true
+vim.opt.wrap = false
+vim.opt.ruler = true
+vim.opt.hlsearch = true
+vim.opt.incsearch = true
+vim.opt.errorbells = false
+vim.opt.cindent = true
+vim.opt.showmode = true
+vim.opt.swapfile = false
+vim.opt.signcolumn = "yes"
+vim.g.mapleader = " "
