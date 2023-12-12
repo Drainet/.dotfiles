@@ -34,24 +34,27 @@ map <leader>fa <Action>(GotoAction)
 map <leader>nf <Action>(NewElement)
 
 "" show:
-map <leader>su <Action>(ShowUsages)
-map <leader>sf <Action>(SelectInProjectView)
-map <leader>sn <Action>(ViewNavigationBar)
-map <leader>se <Action>(RecentFiles)
-map <leader>sgs <Action>(ActivateCommitToolWindow)
-map <leader>sd <Action>(QuickJavaDoc)
-map <leader>sl <Action>(ActivateVersionControlToolWindow)
-map <leader>ss <Action>(ViewStatusBar)
-map <leader>sb <Action>(ActivateBuildToolWindow)
-map <leader>sgd <Action>(ActivateGradleToolWindow)
-map <leader>st <Action>(ActivateTerminalToolWindow)
-map <leader>sm <Action>(FileStructurePopup)
+map su <Action>(ShowUsages)
+map sf <Action>(SelectInProjectView)
+map sn <Action>(ViewNavigationBar)
+map se <Action>(RecentFiles)
+map sgs <Action>(ActivateCommitToolWindow)
+map sd <Action>(QuickJavaDoc)
+map sl <Action>(ActivateVersionControlToolWindow)
+map ss <Action>(ViewStatusBar)
+map sb <Action>(ActivateBuildToolWindow)
+map sgd <Action>(ActivateGradleToolWindow)
+map st <Action>(ActivateTerminalToolWindow)
+map sm <Action>(FileStructurePopup)
+map sr <Action>(:cursive.repl.actions/run-top-sexp)
 
 "" extract:
 map <leader>ev <Action>(IntroduceVariable)
 map <leader>ef <Action>(ExtractFunction)
 map <leader>ea <Action>(IntroduceParameter)
 map <leader>ep <Action>(IntroduceProperty)
+
+map <leader>df <Action>(ToggleDistractionFreeMode)
 
 "" move:
 map mk @=<Action>(MoveStatementUp)<CR>
