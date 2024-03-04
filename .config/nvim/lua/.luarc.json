@@ -1,0 +1,32 @@
+{
+    "workspace.library": [
+        "/Users/drain/.config/nvim",
+        "/Users/drain/.config/nvim/pack/github/start/copilot.vim",
+        "/Users/drain/.local/share/nvim/site",
+        "/Users/drain/.local/share/nvim/site/pack/packer/start/auto-pairs",
+        "/Users/drain/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+        "/Users/drain/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+        "/Users/drain/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+        "/Users/drain/.local/share/nvim/site/pack/packer/start/gruvbox-material",
+        "/Users/drain/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
+        "/Users/drain/.local/share/nvim/site/pack/packer/start/LuaSnip",
+        "/Users/drain/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+        "/Users/drain/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+        "/Users/drain/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+        "/Users/drain/.local/share/nvim/site/pack/packer/start/packer.nvim",
+        "/Users/drain/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+        "/Users/drain/.local/share/nvim/site/pack/packer/start/rust.vim",
+        "/Users/drain/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+        "/Users/drain/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+        "/Users/drain/.local/share/nvim/site/pack/packer/start/vim-iced",
+        "/Users/drain/.local/share/nvim/site/pack/packer/start/vim-sexp",
+        "/opt/homebrew/Cellar/neovim/0.8.3/share/nvim/runtime",
+        "/opt/homebrew/Cellar/neovim/0.8.3/share/nvim/runtime/pack/dist/opt/matchit",
+        "/opt/homebrew/Cellar/neovim/0.8.3/lib/nvim",
+        "/Users/drain/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp/after",
+        "/Users/drain/.local/share/nvim/site/pack/packer/start/cmp_luasnip/after",
+        "/Users/drain/.local/share/nvim/site/pack/packer/start/rust.vim/after",
+        "/Users/drain/.config/nvim/after",
+        "${3rd}/luassert/library"
+    ]
+}

@@ -2,7 +2,7 @@ let mapleader = " "
 syntax on
 set background=dark
 set tabstop=4 softtabstop=4 shiftwidth=4
-set scrolloff=10
+set scrolloff=5
 set ai
 set nowrap
 set number
