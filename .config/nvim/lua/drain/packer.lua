@@ -11,6 +11,10 @@ return require('packer').startup(function(use)
   use 'numToStr/Comment.nvim'
   use 'tpope/vim-fugitive'
   use 'rust-lang/rust.vim'
+  use { 
+	"nvim-telescope/telescope-file-browser.nvim", 
+	requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" } 
+  }
   use {
     'nvim-telescope/telescope.nvim', branch = '0.1.x', 
     requires = { {'nvim-lua/plenary.nvim'} }
@@ -33,4 +37,6 @@ return require('packer').startup(function(use)
 	  'liquidz/vim-iced',
 	  ['for'] = 'clojure'
   }
+  use 'Olical/conjure'
+  use 'chrisbra/csv.vim'
 end)
