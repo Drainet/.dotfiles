@@ -39,4 +39,14 @@ return require('packer').startup(function(use)
   }
   use 'Olical/conjure'
   use 'chrisbra/csv.vim'
+  use { 
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons'
+    },
+  }
+  use {
+    'iamcco/markdown-preview.nvim',
+    run = function() vim.fn["mkdp#util#install"]() end,
+  }
 end)

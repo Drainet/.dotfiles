@@ -29,7 +29,6 @@ local on_attach = function(client, bufnr)
 	vim.keymap.set('n', '<space>rf', function() vim.lsp.buf.format { async = true } end, bufopts)
 	vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts)
 	vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
-	vim.keymap.set('n', '<space>f', vim.lsp.buf.formatting, bufopts)
 end
 
 
@@ -37,14 +36,12 @@ end
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
-local lspconfig = require('lspconfig')
-
 -- Enable some language servers with the additional completion capabilities offered by nvim-cmp
 local servers = {
 	'clangd',
 	'rust_analyzer',
 	'pyright',
-	'tsserver',
+	'ts_ls',
 	'sourcekit',
 	'kotlin_language_server',
 	'clojure_lsp',
@@ -52,10 +49,11 @@ local servers = {
 	'hls'
 }
 for _, lsp in ipairs(servers) do
-	lspconfig[lsp].setup {
+	vim.lsp.config(lsp, {
 		on_attach = on_attach,
 		capabilities = capabilities,
-	}
+	})
+	vim.lsp.enable(lsp)
 end
 
 -- luasnip setup
